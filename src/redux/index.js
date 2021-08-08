@@ -25,4 +25,11 @@ const store = createStore(
   compose(applyMiddleware(thunk, routerMiddleware(history)))
 );
 
+// if (module.hot) {
+//   // Enable Webpack hot module replacement for reducers
+//   module.hot.accept('./reducers', () => {
+//     store.replaceReducer(rootReducer(history));
+//   });
+// }
+
 export default store;
