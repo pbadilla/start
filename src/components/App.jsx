@@ -1,19 +1,16 @@
 import "../styles/index.scss";
 import React from "react";
-// import Recipes from "./Recipes";
-// import pic from "../images/pic2.jpg";
+import { Route, Switch } from "react-router";
+import Landing from "./Landing";
 
 const App = () => {
   return (
     <>
-      {/* <section className="hero"></section> */}
       <main>
-        <section>
-          <h1>Hello its React</h1>
-        </section>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+        </Switch>
       </main>
-      {/* <img src={pic} /> */}
-      {/* <Recipes /> */}
     </>
   );
 };
