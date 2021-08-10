@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import { ConnectedRouter } from "connected-react-router";
 import { history } from "./redux";
 import store from "./redux";
-import App from "./components/App";
+import App from "./containers/App";
 
 render(
   <Provider store={store}>
